@@ -4,5 +4,5 @@ require('which-key').add({
     { '<leader>gp', '<cmd> Gitsigns nav_hunk prev<cr>', desc = 'Prev Hunk' },
     { '<leader>gs', '<cmd> Gitsigns preview_hunk_inline<cr>', desc = 'Show Hunk' },
     { '<leader>gh', '<cmd> Gitsigns stage_hunk<cr>', desc = 'Stage Hunk' },
-    { '<leader>gb', '<cmd> Gitsigns stage_buffer<cr>', desc = 'Stage Buffer' },
+    { '<leader>ga', '<cmd> Git add ' .. vim.fn.expand('%:p') .. '<cr>', desc = 'Stage Buffer' },
 })

@@ -28,6 +28,16 @@ vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
 
+vim.opt.list = true
+vim.opt.listchars =
+{
+    tab = '> ',
+    trail = '-',
+    nbsp = '+',
+    space = '·',
+    leadmultispace = '···-'
+}
+
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
 
 vim.diagnostic.config({ virtual_text = true })

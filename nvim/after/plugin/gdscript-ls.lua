@@ -1,1 +1,1 @@
-require('lspconfig').gdscript.setup{}
+vim.lsp.enable('gdscript')

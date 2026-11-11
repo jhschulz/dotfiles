@@ -20,6 +20,8 @@ Start with `shell.qml`, which creates `Bar`. `Bar.qml` uses `Variants` to create
 
 ## Customization
 
+Click the clock to open the calendar below it. Use the arrows to browse months and Today to return to the current month. Today is highlighted in gold. Click outside the calendar or press Escape to close it. The popup manages its own input grab so its buttons receive hover and click events. Each monitor has its own calendar, which opens on the current month.
+
 Edit `Theme.qml` to change colors, font, padding, or panel height. Edit the format string in `Time.qml` to change the date and time display. Qt’s `HH:mm` is 24-hour time; `hh:mm AP` uses AM/PM. Add future widgets as small components beside the three existing ones.
 
 ## Checking changes

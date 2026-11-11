@@ -1,0 +1,9 @@
+singleton AppIcons 1.0 AppIcons.qml
+singleton Theme 1.0 Theme.qml
+singleton Time 1.0 Time.qml
+
+Bar 1.0 Bar.qml
+CalendarPopup 1.0 CalendarPopup.qml
+ClockWidget 1.0 ClockWidget.qml
+WindowTitle 1.0 WindowTitle.qml
+Workspaces 1.0 Workspaces.qml

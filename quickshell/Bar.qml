@@ -28,31 +28,14 @@ Scope {
                 anchors.rightMargin: Theme.padding
                 spacing: Theme.padding
 
-                Workspaces { monitor: panel.monitor }
+                Workspaces { id: workspaces; monitor: panel.monitor }
                 Item {
                     Layout.fillWidth: true
                     Layout.minimumWidth: 0
                     Layout.fillHeight: true
-
-                    Rectangle {
-                        anchors.centerIn: parent
-                        width: Math.min(parent.width, title.implicitWidth + Theme.padding * 2)
-                        height: Theme.pillHeight
-                        radius: height / 2
-                        color: Theme.background
-                        visible: title.text.length > 0 && width > 0
-
-                        WindowTitle {
-                            id: title
-                            monitor: panel.monitor
-                            anchors.fill: parent
-                            anchors.leftMargin: Theme.padding
-                            anchors.rightMargin: Theme.padding
-                            verticalAlignment: Text.AlignVCenter
-                        }
-                    }
                 }
                 Rectangle {
+                    id: clockPill
                     implicitWidth: clock.implicitWidth + Theme.padding * 2
                     implicitHeight: Theme.pillHeight
                     radius: height / 2
@@ -69,13 +52,34 @@ Scope {
                         anchors.fill: parent
                         hoverEnabled: true
                         cursorShape: Qt.PointingHandCursor
-                        onClicked: calendarPopup.toggle()
+                        onClicked: {
+                            audioPopup.visible = false;
+                            calendarPopup.toggle();
+                        }
                     }
+                }
+            }
+
+            AudioVisualizer {
+                anchors.centerIn: parent
+                // Keep the visualizer centered on the screen and clear of side pills.
+                width: Math.max(0, Math.min(implicitWidth, panel.width
+                    - 2 * (Math.max(workspaces.width, clockPill.width) + Theme.padding * 2)))
+                visible: width > 0
+                clip: true
+                expanded: audioPopup.visible
+                onClicked: {
+                    calendarPopup.visible = false;
+                    audioPopup.visible = !audioPopup.visible;
                 }
             }
 
             CalendarPopup {
                 id: calendarPopup
+                panelWindow: panel
+            }
+            AudioPopup {
+                id: audioPopup
                 panelWindow: panel
             }
         }

@@ -1,8 +1,13 @@
 singleton AppIcons 1.0 AppIcons.qml
 singleton Theme 1.0 Theme.qml
 singleton Time 1.0 Time.qml
+singleton AudioService 1.0 AudioService.qml
 
 Bar 1.0 Bar.qml
+AudioButton 1.0 AudioButton.qml
+AudioDeviceSection 1.0 AudioDeviceSection.qml
+AudioPopup 1.0 AudioPopup.qml
+AudioVisualizer 1.0 AudioVisualizer.qml
 CalendarPopup 1.0 CalendarPopup.qml
 ClockWidget 1.0 ClockWidget.qml
 WindowTitle 1.0 WindowTitle.qml

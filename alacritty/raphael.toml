@@ -1,0 +1,30 @@
+# Colors (From Raphael's Disputa del Sacramento)
+
+# Default colors
+[colors.primary]
+# hard contrast background = = '#1d2021'
+background = '#38352C'
+# soft contrast background = = '#32302f'
+foreground = '#C7C0A3'
+
+# Normal colors
+[colors.normal]
+black   = '#38352C'
+red     = '#A75329'
+green   = '#575D39'
+yellow  = '#DDB150'
+blue    = '#6C7880'
+magenta = '#6C4C35'
+cyan    = '#82906D'
+white   = '#C7C0A3'
+
+# Bright colors
+[colors.bright]
+black   = '#C7C0A3'
+red     = '#B97757'
+green   = '#CBC281'
+yellow  = '#F2CE78'
+blue    = '#A9B9D1'
+magenta = '#B89E8D'
+cyan    = '#8B997E'
+white   = '#F8F6DF'

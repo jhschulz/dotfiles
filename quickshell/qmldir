@@ -10,5 +10,6 @@ AudioPopup 1.0 AudioPopup.qml
 AudioVisualizer 1.0 AudioVisualizer.qml
 CalendarPopup 1.0 CalendarPopup.qml
 ClockWidget 1.0 ClockWidget.qml
+PowerPopup 1.0 PowerPopup.qml
 WindowTitle 1.0 WindowTitle.qml
 Workspaces 1.0 Workspaces.qml

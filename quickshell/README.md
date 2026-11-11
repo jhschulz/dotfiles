@@ -24,6 +24,8 @@ The Players section lists MPRIS players with track details and Previous, Play/Pa
 
 ## Customization
 
+The power pill beside the clock opens Logout, Sleep, Hibernate, and Shutdown actions. Logout ends the current Hyprland session; the other actions use `systemctl suspend`, `systemctl hibernate`, and `systemctl poweroff`. Hibernate requires working system hibernation support. Failed commands display their error in the popup. Click outside or press Escape to close it.
+
 Click the clock to open the calendar below it. Use the arrows to browse months and Today to return to the current month. Today is highlighted in gold. Click outside the calendar or press Escape to close it. The popup manages its own input grab so its buttons receive hover and click events. Each monitor has its own calendar, which opens on the current month.
 
 Edit `Theme.qml` to change colors, font, padding, or panel height. Edit the format string in `Time.qml` to change the date and time display. Qt’s `HH:mm` is 24-hour time; `hh:mm AP` uses AM/PM. Add future widgets as small components beside the three existing ones.

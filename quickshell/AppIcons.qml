@@ -18,6 +18,8 @@ Singleton {
         if (/gimp|krita|inkscape/.test(app)) return "\uf1fc";
         if (/evince|okular|zathura/.test(app)) return "\uf1c1";
         if (/steam/.test(app)) return "\uf1b6";
+        if (/godot/.test(app)) return "\ue7ee";
+        if (/blender/.test(app)) return "\ue766";
         return "\uf2d0"; // Generic window for unrecognized applications.
     }
 }

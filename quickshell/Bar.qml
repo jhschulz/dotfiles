@@ -34,6 +34,9 @@ Scope {
                     Layout.minimumWidth: 0
                     Layout.fillHeight: true
                 }
+
+                BatteryWidget { id: batteryPill }
+
                 Rectangle {
                     id: clockPill
                     implicitWidth: clock.implicitWidth + Theme.padding * 2
@@ -41,6 +44,8 @@ Scope {
                     radius: height / 2
                     color: clockMouse.containsMouse || calendarPopup.visible
                         ? Theme.blue : Theme.background
+                    border.width: 1
+                    border.color: Theme.gold
 
                     ClockWidget {
                         id: clock
@@ -92,7 +97,7 @@ Scope {
                         radius: height / 2
                         color: powerButton.hovered || powerButton.down || powerPopup.visible
                             ? Theme.blue : Theme.background
-                        border.width: powerButton.visualFocus ? 1 : 0
+                        border.width: 1
                         border.color: Theme.gold
                     }
                     onClicked: {
@@ -129,6 +134,10 @@ Scope {
             }
             PowerPopup {
                 id: powerPopup
+                panelWindow: panel
+            }
+            BatteryPopup {
+                id: batteryPopup
                 panelWindow: panel
             }
         }

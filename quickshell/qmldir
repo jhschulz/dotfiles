@@ -2,6 +2,7 @@ singleton AppIcons 1.0 AppIcons.qml
 singleton Theme 1.0 Theme.qml
 singleton Time 1.0 Time.qml
 singleton AudioService 1.0 AudioService.qml
+singleton BatteryService 1.0 BatteryService.qml
 
 Bar 1.0 Bar.qml
 AudioButton 1.0 AudioButton.qml
@@ -13,3 +14,5 @@ ClockWidget 1.0 ClockWidget.qml
 PowerPopup 1.0 PowerPopup.qml
 WindowTitle 1.0 WindowTitle.qml
 Workspaces 1.0 Workspaces.qml
+BatteryWidget 1.0 BatteryWidget.qml
+BatteryPopup 1.0 BatteryPopup.qml
